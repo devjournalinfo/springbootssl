@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springBootSSL
+
+server:
+  port: 8443
+  ssl: #don't you ever put path and keystore password in configuration in plain text ! use .env file at least !
+    key-store: "file:D:/keystore.p12"
+    key-store-password: "test123"
